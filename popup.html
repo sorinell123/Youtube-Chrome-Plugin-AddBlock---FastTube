@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Ad Blocker Stats</title>
+    <style>
+        body {
+            width: 300px;
+            padding: 15px;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        .stats-container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .stat-item {
+            margin-bottom: 15px;
+        }
+        .stat-label {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .stat-value {
+            color: #c00;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .timestamp {
+            color: #888;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="stats-container">
+        <div class="stat-item">
+            <div class="stat-label">Total Ads Blocked</div>
+            <div class="stat-value" id="totalAds">0</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-label">Ads Blocked (Current Page)</div>
+            <div class="stat-value" id="currentPageAds">0</div>
+        </div>
+        <div class="timestamp" id="lastBlocked">Last blocked: Never</div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
